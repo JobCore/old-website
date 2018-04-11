@@ -1,0 +1,43 @@
+@import './fontAwesome';
+@import './globals';
+@import './navigation';
+@import './hero';
+@import './features';
+@import './bonus-features';
+@import './prices';
+@import './partners';
+@import './roadmap';
+@import './team';
+@import './contact';
+@import './footer';
+
+* {
+  box-sizing: border-box;
+  font-family: $main-fonts;
+  margin: 0;
+  padding: 0;
+}
+
+#layout {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 80px 1fr 250px;
+  max-width: 100vw;
+  min-height: 100vh;
+
+  main {
+    display: grid;
+    height: 100%;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: normal;
+    }
+  }
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}

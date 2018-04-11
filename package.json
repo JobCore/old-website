@@ -1,0 +1,47 @@
+{
+  "name": "jobcore-website",
+  "description": "JobCore website",
+  "version": "1.0.0",
+  "author": "Manten <jorgemsm19@gmail.com>",
+  "keywords": [
+    "gatsby",
+    "jobs"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "eslint": "eslint . --ext .js,.jsx --quiet",
+    "stylelint": "stylelint 'src/scss/*.scss'"
+  },
+  "pre-commit": [
+    "eslint",
+    "stylelint"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-sass": "^1.0.25",
+    "prop-types": "^15.6.1",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.11.1",
+    "stylelint": "^9.2.0",
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.0.0"
+  }
+}

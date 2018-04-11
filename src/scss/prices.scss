@@ -1,0 +1,11 @@
+@import './globals';
+
+#prices {
+  background-color: $lightgreen;
+  min-height: 100px;
+
+  & > div {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

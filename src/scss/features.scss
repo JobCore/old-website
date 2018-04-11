@@ -1,0 +1,31 @@
+@import './globals';
+
+#features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100px;
+  position: relative;
+
+  h2 {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+  }
+
+  #left,
+  #right {
+    align-items: center;
+    display: grid;
+    justify-items: center;
+  }
+
+  #left {
+    background-color: $pink;
+  }
+
+  #right {
+    background-color: $lightyellow;
+  }
+}

@@ -1,0 +1,43 @@
+@import './globals';
+
+nav {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-self: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+
+  .logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    align-items: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-items: center;
+
+    li {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      list-style: none;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      .btn {
+        color: #eee;
+        width: 100%;
+        background-color: $lightblue;
+        border-radius: 20px;
+        padding: 11px 20px;
+      }
+    }
+
+  }
+}

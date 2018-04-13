@@ -3,19 +3,67 @@ import React from 'react';
 const Patners = () => (
   <section id="partners">
     <div className="container">
-      <h2>Partners</h2>
+      <h2 className="section-title">Partners</h2>
       <div className="showcase">
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
-        <img src="" alt="" className="company" />
+        <div className="main-brands">
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+        </div>
+        <div className="other-brands">
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+          <img
+            src="http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png"
+            alt="Company logo"
+            className="company"
+          />
+        </div>
       </div>
     </div>
   </section>

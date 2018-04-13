@@ -21,7 +21,7 @@ const Hero = () => (
         </div>
       </div>
       <div className="explanation">
-        <div>
+        <div className="message">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
             inventore aut molestias rerum?

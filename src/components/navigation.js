@@ -56,9 +56,9 @@ class Navigation extends Component {
               </li>
               <li
                 className={
-                  location.hash === '#price' ? 'nav-item active' : 'nav-item'
+                  location.hash === '#prices' ? 'nav-item active' : 'nav-item'
                 }>
-                <Link to="/#price" className="nav-link">
+                <Link to="/#prices" className="nav-link">
                   Price
                 </Link>
               </li>

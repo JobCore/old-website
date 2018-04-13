@@ -3,4 +3,53 @@
 #bonus {
   background-color: $lightergreen;
   min-height: 100px;
+  padding-bottom: 15px;
+
+  .messages {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 80%;
+      width: 40%;
+      opacity: 0.5;
+      top: 100px;
+      left: 50px;
+      z-index: -1;
+      background: url('http://cdn.onlinewebfonts.com/svg/img_431572.png') no-repeat;
+      background-size: contain;
+    }
+
+    .section-title,
+    .message {
+      width: 60%;
+      margin-left: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .section-title {
+      padding: 30px 0 20px; // Bottom is padding minus gap (30px - 10px)
+    }
+
+    .message {
+      padding: 20px;
+      grid-gap: 10px;
+
+      p {
+        width: 70%;
+        font-weight: bold;
+      }
+    }
+  }
 }

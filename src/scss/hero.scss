@@ -2,7 +2,6 @@
 
 #hero {
   display: grid;
-  min-height: 100px;
 
   .container {
     display: grid;
@@ -39,19 +38,24 @@
         }
       }
 
-      &--signup {
+      &--sign-up {
         width: 100%;
 
-        .signup-btn {
+        .sign-up-btn {
           display: block;
           font-size: 1.35rem;
           width: 80%;
           margin: 20px auto 0;
           background-color: $purple;
-          border: none;
+          border: 0;
           border-radius: 30px;
           color: #fff;
           padding: 15px;
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.9;
+          }
         }
       }
     }
@@ -68,8 +72,8 @@
         justify-content: flex-end;
 
         &::after {
-          content: "";
-          background: url(https://thumbs.dreamstime.com/b/waitress-figure-shows-tray-31272860.jpg) no-repeat;
+          content: '';
+          background: url('https://thumbs.dreamstime.com/b/waitress-figure-shows-tray-31272860.jpg') no-repeat;
           opacity: 0.5;
           top: -55px;
           left: 0;

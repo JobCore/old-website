@@ -1,4 +1,4 @@
-@import '../../node_modules/video-react/styles/scss/video-react.scss';
+@import '../../node_modules/video-react/styles/scss/video-react';
 @import './fontAwesome';
 @import './globals';
 @import './navigation';
@@ -57,6 +57,20 @@ li {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .container {
   padding: 0;
+}
+
+section {
+  min-height: 300px;
 }

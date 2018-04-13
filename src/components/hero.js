@@ -16,8 +16,8 @@ const Hero = () => (
             for the hospitality industry.
           </p>
         </div>
-        <div className="cta--signup">
-          <button className="signup-btn">Sign Up for free</button>
+        <div className="cta--sign-up">
+          <button className="sign-up-btn">Sign Up for free</button>
         </div>
       </div>
       <div className="explanation">
@@ -29,13 +29,13 @@ const Hero = () => (
         </div>
 
         {/*
-        Source:
+        Component source:
         https://video-react.js.org/components/player/
         */}
         <Player
           playsInline
-          poster="https://i.ytimg.com/an_webp/9ANyNtg2tRY/mqdefault_6s.webp?du=3000&sqp=CLj-vdYF&rs=AOn4CLC_wwr_BBF8_QKUeI1QMFUh6rxzVQ"
-          src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          poster="https://i.redditmedia.com/kXhbzIEZIfa6cFVFMLeJYEbr2pdDR13Zx9MOb2f9Bhc.jpg?w=320&s=a2bb79971aa62d5f876d8e6b4746f24f"
+          src="#"
         />
       </div>
     </div>

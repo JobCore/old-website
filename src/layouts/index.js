@@ -7,6 +7,7 @@ import Helmet from 'react-helmet';
 import $ from 'jquery';
 import 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import 'bootstrap/scss/bootstrap.scss';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';

@@ -9,6 +9,7 @@
     "selector-no-qualifying-type": null,
     "selector-max-compound-selectors": null,
     "block-opening-brace-space-before": null,
-    "order/properties-alphabetical-order": null
+    "order/properties-alphabetical-order": null,
+    "scss/selector-no-redundant-nesting-selector": null
   }
 }

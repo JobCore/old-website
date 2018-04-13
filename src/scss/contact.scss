@@ -3,13 +3,15 @@
 #contact {
   .container {
     display: grid;
-    min-height: 500px;
-    grid-template-rows: 100px 1fr;
+    min-height: 550px;
+    grid-template-rows: minmax(100px, max-content) 1fr;
     height: 100%;
-    margin: 20px auto;
+    margin: 0 auto;
+    padding-bottom: 60px;
   }
 
   h2 {
+    padding: 30px 0; // Bottom is padding minus
     width: 100%;
     text-align: center;
   }

@@ -30,6 +30,7 @@
     "prop-types": "^15.6.1",
     "react-bootstrap": "^0.32.1",
     "react-helmet": "^5.2.0",
+    "uuid": "^3.2.1",
     "video-react": "^0.10.4"
   },
   "devDependencies": {

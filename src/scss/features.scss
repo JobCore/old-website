@@ -1,30 +1,80 @@
 @import './globals';
 
 #features {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
+
+  .center-images {
+    position: absolute;
+    margin: 0 25%;
+    width: 50%;
+    height: 95%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 0 160px;
+    padding-top: calc(30px + 57px + 63px + 20px); // top + title size + subsection-tile+ bottom
+
+    img {
+      height: 90%; // feature total height
+      width: 60%;
+    }
+  }
 
   h2 {
     left: 0;
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 30px;
     width: 100%;
   }
 
-  #left,
-  #right {
+  #company,
+  #talent {
     align-items: center;
     display: grid;
+    grid-gap: 10px;
     justify-items: center;
+    padding: 0 160px;
+    padding-top: calc(30px + 57px + 20px); // top + title size + bottom
+    padding-bottom: 40px;
+
+    .subsection-title {
+      padding: 0 0 30px;
+    }
+
+    .feature {
+      padding-bottom: 20px;
+
+      .message {
+        margin: 10px 0;
+      }
+
+      a:link,
+      a:visited {
+        color: $darkpurple;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
   }
 
-  #left {
+  #company {
     background-color: $pink;
+
+    .feature {
+      text-align: right;
+    }
   }
 
-  #right {
+  #talent {
     background-color: $lightyellow;
+
+    .feature {
+      text-align: left;
+    }
   }
 }

@@ -38,7 +38,7 @@
     display: grid;
     grid-gap: 10px;
     justify-items: center;
-    padding: 0 160px;
+    padding: 0 129px;
     padding-top: calc(30px + 57px + 20px); // top + title size + bottom
     padding-bottom: 40px;
 
@@ -47,6 +47,7 @@
     }
 
     .feature {
+      width: 70%;
       padding-bottom: 20px;
 
       .message {

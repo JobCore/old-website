@@ -7,10 +7,7 @@ const Prices = () => (
         <h2 className="section-title">Prices</h2>
         <div className="message">
           <h3>Free for Talents</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-            nobis?
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div className="cta">
           <button className="btn">Enterprise plans start $0.00 per User</button>

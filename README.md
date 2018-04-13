@@ -11,7 +11,7 @@ npm install
 Then run development server:
 
 ```sh
-npm run develop
+npm run dev
 ```
 
 Or build final website

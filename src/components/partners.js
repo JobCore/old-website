@@ -2,7 +2,7 @@ import React from 'react';
 
 const Patners = () => (
   <section id="partners">
-    <div>
+    <div className="container">
       <h2>Partners</h2>
     </div>
   </section>

@@ -2,21 +2,31 @@ import React from 'react';
 
 const Contact = () => (
   <section id="contact">
-    <div>
+    <div className="container">
       <h2>Contact</h2>
       <form>
         <div className="column column--left">
           <div className="inputs">
             <div className="input-group">
-              <label htmlFor="name">
+              <label htmlFor="name" className="form-check-label">
                 Full Name
-                <input type="text" name="name" id="name" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  className="form-control"
+                />
               </label>
             </div>
             <div className="input-group">
-              <label htmlFor="email">
+              <label htmlFor="email" className="form-check-label">
                 Email
-                <input type="email" name="email" id="email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="form-control"
+                />
               </label>
             </div>
           </div>
@@ -29,9 +39,13 @@ const Contact = () => (
         </div>
         <div className="column column--right">
           <div className="input-group observation">
-            <label htmlFor="observation">
+            <label htmlFor="observation" className="form-check-label">
               Observation
-              <textarea name="observation" id="observation" />
+              <textarea
+                name="observation"
+                id="observation"
+                className="form-control"
+              />
             </label>
           </div>
         </div>

@@ -1,43 +1,80 @@
 @import './globals';
 
-nav {
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  align-self: center;
-  margin: 0 auto;
-  height: 100%;
-  width: 80%;
+.navbar {
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute !important;
+  z-index: 9999;
+  width: 100%;
+  background-color: #fff;
+  font-size: 1rem;
 
-  .logo {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  ul {
-    align-items: center;
+  .navbar-nav {
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr) repeat(2, 160px);
     justify-items: center;
+    align-items: center;
 
-    li {
-      display: flex;
-      height: 100%;
-      width: 100%;
-      list-style: none;
+    .nav-item {
       text-align: center;
-      align-items: center;
-      justify-content: center;
-
-      .btn {
-        color: #eee;
-        width: 100%;
-        background-color: $lightblue;
-        border-radius: 20px;
-        padding: 11px 20px;
-      }
+      width: 100%;
     }
 
+    i {
+      margin-left: 10px;
+    }
+
+    .btn {
+      color: #efffee;
+      width: 100%;
+      background-color: $lightblue;
+      border-radius: 20px;
+
+      &:link,
+      &:hover,
+      &:active,
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    .navbar-nav {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: initial;
+      align-items: center;
+
+      .nav-item {
+        text-align: left;
+      }
+
+      .dropdown {
+        .dropdown-toggle {
+          display: flex;
+          text-align: left;
+          align-items: center;
+          height: 50px;
+        }
+      }
+
+      .btn {
+        color: rgba(0, 0, 0, 0.5) !important;
+        width: initial;
+        background-color: initial;
+        border-radius: initial;
+        padding: initial;
+        text-align: left;
+
+        &:hover, {
+          color: rgba(0, 0, 0, 0.7) !important;
+        }
+      }
+    }
   }
 }

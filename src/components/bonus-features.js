@@ -2,7 +2,7 @@ import React from 'react';
 
 const BonusFeatures = () => (
   <section id="bonus">
-    <div>
+    <div className="container">
       <h2>Bonus Features</h2>
     </div>
   </section>

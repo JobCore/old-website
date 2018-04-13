@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "eslint": "eslint . --ext .js,.jsx --quiet",
     "stylelint": "stylelint 'src/scss/*.scss'"
@@ -19,13 +19,18 @@
     "stylelint"
   ],
   "dependencies": {
+    "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.25",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
     "prop-types": "^15.6.1",
-    "react-helmet": "^5.2.0"
+    "react-bootstrap": "^0.32.1",
+    "react-helmet": "^5.2.0",
+    "video-react": "^0.10.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",

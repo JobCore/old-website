@@ -1,8 +1,7 @@
 @import './globals';
 
 #prices {
-  background-color: $olive;
-  padding-bottom: 50px;
+  background-color: $green;
 
   .section-title,
   .message,
@@ -18,10 +17,9 @@
   .cta,
   .message {
     p {
+      font-size: 14px;
       color: $darkgreen;
-      width: 75%;
-      font-size: 0.875rem;
-      font-style: italic;
+      width: 78%;
       font-weight: bold;
     }
   }
@@ -35,17 +33,19 @@
     justify-items: center;
     align-items: center;
     z-index: 1;
+    overflow: hidden;
+    height: 100%;
 
     &::after {
       position: absolute;
       content: '';
-      height: 80%;
+      height: 128%;
       width: 40%;
       opacity: 0.5;
-      top: 60px;
-      right: -80px;
+      top: 80px;
+      right: 0;
       z-index: -1;
-      background: url('http://cdn.onlinewebfonts.com/svg/img_431572.png') no-repeat;
+      background: url('../img/bartender_icon.png') no-repeat;
       background-size: contain;
     }
   }
@@ -56,17 +56,16 @@
 
   .message {
     margin-top: 30px;
-
-    h3 {
-      font-size: 2.5rem;
-    }
   }
 
   .cta {
+    padding-bottom: 50px;
+
     .btn {
       display: block;
-      font-size: 1.35rem;
-      width: max-content;
+      font-family: $sub-font;
+      font-size: 21px;
+      width: 70%;
       margin: 30px auto 20px;
       background-color: $purple;
       border: 0;

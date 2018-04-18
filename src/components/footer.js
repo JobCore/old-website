@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import Logo from '../img/logo.png';
 
 const Footer = ({ siteTitle }) => (
   <footer id="footer">
@@ -40,13 +41,12 @@ const Footer = ({ siteTitle }) => (
           </a>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod
-          nihil numquam, non iure assumenda magnam odio eveniet praesentium
-          amet.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+          voluptatum incidunt maxime dicta!
         </p>
       </div>
 
-      <div id="logo">{siteTitle} Logo</div>
+      <img id="logo" src={Logo} alt={`${siteTitle} logo`} />
     </div>
   </footer>
 );

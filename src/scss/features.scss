@@ -8,23 +8,42 @@
 
   .center-images {
     position: absolute;
-    margin: 0 25%;
-    width: 50%;
-    height: 95%;
+    margin: 0 40%;
+    width: 20%;
+    height: 100%;
     display: grid;
     justify-items: center;
     align-items: center;
+    grid-gap: 20px;
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-    padding: 0 160px;
-    padding-top: calc(30px + 57px + 63px + 20px); // top + title size + subsection-tile+ bottom
+    padding: 0;
+    padding-top: calc(30px + 65px + 58px + 20px); // top + title height + subsection-tile+ bottom
+    padding-bottom: 40px;
 
     img {
-      height: 90%; // feature total height
-      width: 60%;
+      height: 100%; // feature total height
     }
+
+    .bartender {
+      margin-left: 60px;
+    }
+
+    .waitress {
+      margin-left: 75px;
+    }
+
+    .clean {
+      margin-right: 23px;
+    }
+
+    .chef {
+      margin-top: 20px;
+      height: 100%;
+    }
+
   }
 
-  h2 {
+  .section-title {
     left: 0;
     position: absolute;
     text-align: center;
@@ -38,33 +57,39 @@
     display: grid;
     grid-gap: 10px;
     justify-items: center;
-    padding: 0 129px;
-    padding-top: calc(30px + 57px + 20px); // top + title size + bottom
+    padding: 0 89px;
+    padding-top: calc(30px + 42px + 20px); // top + title height + bottom
     padding-bottom: 40px;
 
     .subsection-title {
-      padding: 0 0 30px;
+      padding: 0 0 40px;
     }
 
     .feature {
       width: 70%;
-      padding-bottom: 20px;
+      padding-bottom: 80px;
 
       .message {
-        margin: 10px 0;
+        font-size: 20px;
+        margin: 20px 0 10px;
+        font-family: $sub-font;
       }
 
       a:link,
       a:visited {
-        color: $darkpurple;
+        font-size: 18px;
+        color: $purple;
         font-weight: bold;
-        font-style: italic;
+      }
+
+      a:hover {
+        cursor: pointer;
       }
     }
   }
 
   #company {
-    background-color: $pink;
+    background-color: $lightpink;
 
     .feature {
       text-align: right;

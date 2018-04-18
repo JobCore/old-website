@@ -11,7 +11,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/scss/bootstrap.scss';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
-
 import '../scss/main.scss';
 
 const Layout = ({ children, data, location }) => (
@@ -19,20 +18,24 @@ const Layout = ({ children, data, location }) => (
     <Helmet title={data.site.siteMetadata.title}>
       {/* TODO: UNCOMMENT BEFORE BUILD */}
       {/* <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js"
-        integrity="sha256-FCiJD1Xk+2itXYf5YdFQrPURijNogcXySEApUqeRwHc="
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossOrigin="anonymous"
       />
       <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossOrigin="anonymous"
       />
       <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"
-        integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossOrigin="anonymous"
       /> */}
+      <link
+        href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto:300:400"
+        rel="stylesheet"
+      />
     </Helmet>
 
     <Navigation siteTitle={data.site.siteMetadata.title} location={location} />

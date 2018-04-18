@@ -34,7 +34,7 @@ const Contact = () => (
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
             molestias ratione, ipsum dolores vel quisquam ducimus! Culpa, totam
             cumque illo repudiandae nobis quos, eum accusantium corporis
-            reprehenderit quae, aliquid dignissimos?
+            reprehenderit quae.
           </p>
         </div>
         <div className="column column--right">

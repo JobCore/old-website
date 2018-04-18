@@ -6,15 +6,15 @@ const Hero = () => (
     <div className="container">
       <div className="cta">
         <div className="cta--message">
-          <h2 className="title">
+          <h1 className="title">
             <span>Get work fast,</span>
             <span>get paid</span>
             <span>the same day</span>
-          </h2>
-          <p className="subtitle">
+          </h1>
+          <h5 className="subtitle">
             The first distributed talent pool <br />
             for the hospitality industry.
-          </p>
+          </h5>
         </div>
         <div className="cta--sign-up">
           <button className="sign-up-btn">Sign Up for free</button>
@@ -23,8 +23,8 @@ const Hero = () => (
       <div className="explanation">
         <div className="message">
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
-            inventore aut molestias rerum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            reiciendis voluptates enim nulla?
           </p>
         </div>
 

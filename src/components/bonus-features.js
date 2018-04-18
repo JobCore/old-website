@@ -25,8 +25,8 @@ const convertDataToHtml = dataArr => {
     if (!data.message) return;
     html.push(
       <div className="message" key={uuid()}>
-        <h3>{data.title}</h3>
-        <p>{data.message}</p>
+        <h3 className="bonus-title">{data.title}</h3>
+        <p className="bonus-text">{data.message}</p>
       </div>
     );
   });

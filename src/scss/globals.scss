@@ -1,23 +1,35 @@
-// COLORS
-// $lightyellow: #fffcd8;
-// $lightblue: #75c5d0;
-// $darkgreen: #4b521c;
-// $lightgreen: #d6ecc8;
-// $lightergreen: #e7f4ef;
-// $pink: #e9bee4;
-// $darkblue: #26666f;
-// $purple: #c149b3;
+// MAIN COLORS
 $black: #383838;
-$lightyellow: #fffcd7;
-$lightblue: #75c6d0;
-$celeste: #a1d8df;
-$darkgreen: #4c5223;
-$olive: #e2f0d7;
-$lightgreen: #e7f4ef;
-$pink: #f8f0f6;
+$lightyellow: rgba(255, 242, 0, 0.2);
 $darkblue: #24666f;
-$purple: #b4509f;
-$darkpurple: #be2c94;
+$lightblue: #75c5d0;
+// $lighterblue: #76c5d0; // ORIGINAL
+// $darkgreen: #070705; // ORIGINAL
+// $green: #d6ecc8; // ORIGINAL
+// $lightgreen: rgba(218, 236, 205, 0.8); // ORIGINAL
+$lighterblue: #a1d8df; // GIMP
+$darkgreen: #4c5223; // GIMP
+$green: #e2f0d7; // GIMP
+$lightgreen: #e7f4ef; // GIMP
+$greenishblue: #ceeae0;
+$pink: #e9bee4;
+$lightpink: rgba(183, 91, 163, 0.1);
+$purple: #c149b3;
 
 // FONTS
-$main-fonts: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$main-font: 'Roboto', sans-serif;
+$sub-font: 'Noto Serif', serif;
+
+.main-parragraphs {
+  font-family: $main-font;
+}
+
+.small-parragaphs {
+  font-family: $main-font;
+}
+
+.italized {
+  font-family: $sub-font;
+  font-style: italic;
+}
+

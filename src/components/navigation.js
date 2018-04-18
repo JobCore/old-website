@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import Logo from '../img/logo.png';
 
 class Navigation extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class Navigation extends Component {
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <a className="navbar-brand" href="#">
-            {siteTitle} Logo
+            <img id="logo" src={Logo} alt={`${siteTitle} logo`} />
           </a>
           <button
             className="navbar-toggler ml-auto"

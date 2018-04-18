@@ -14,7 +14,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: $main-fonts;
+  font-family: $main-font;
   margin: 0;
   padding: 0;
 }
@@ -23,7 +23,7 @@ html,
 body,
 #layout {
   color: $black;
-  margin-top: 50px;
+  margin-top: 80px;
   box-sizing: border-box;
   font-size: 16px;
   min-width: 680px;
@@ -74,4 +74,38 @@ p {
 
 section {
   min-height: 300px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-weight: 300 !important;
+  font-family: $main-font !important;
+}
+
+h1 {
+  font-size: 64px !important;
+}
+
+h2 {
+  font-size: 64px !important;
+}
+
+h3 {
+  font-size: 40px !important;
+}
+
+h4 {
+  font-size: 38px !important;
+}
+
+h5 {
+  font-family: $sub-font !important;
+  font-size: 28px !important;
+}
+
+h6 {
+  font-size: 58px !important;
 }

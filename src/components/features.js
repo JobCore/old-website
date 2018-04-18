@@ -1,5 +1,9 @@
 import React from 'react';
 import uuid from 'uuid/v4';
+import Bartender from '../img/bartender_icon.png';
+import Waitress from '../img/waitress_icon.png';
+import Clean from '../img/clean_icon.png';
+import Chef from '../img/chef_icon.png';
 
 const companyData = [
   {
@@ -53,10 +57,11 @@ const convertDataToHtml = dataArr => {
     if (!data.message) return;
     html.push(
       <div className="feature" key={uuid()}>
-        <h3 className="title">{data.title}</h3>
+        <h4 className="title">{data.title}</h4>
         <p className="message">{data.message}</p>
         <a
           href="#"
+          className="italized"
           data-toggle="tooltip"
           title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis soluta. Quidem, culpa.">
           Read more
@@ -72,22 +77,10 @@ const Features = () => (
   <section id="features">
     <h2 className="section-title">Features</h2>
     <div className="center-images">
-      <img
-        src="https://image.flaticon.com/icons/png/512/185/185488.png"
-        alt="#"
-      />
-      <img
-        src="https://image.flaticon.com/icons/png/512/185/185488.png"
-        alt="#"
-      />
-      <img
-        src="https://image.flaticon.com/icons/png/512/185/185488.png"
-        alt="#"
-      />
-      <img
-        src="https://image.flaticon.com/icons/png/512/185/185488.png"
-        alt="#"
-      />
+      <img className="bartender" src={Bartender} alt="#" />
+      <img className="waitress" src={Waitress} alt="#" />
+      <img className="clean" src={Clean} alt="#" />
+      <img className="chef" src={Chef} alt="#" />
     </div>
     <div id="company">
       <h3 className="subsection-title">Company</h3>

@@ -1,33 +1,35 @@
 @import './globals';
 
 #team {
-  background-color: $celeste;
-  padding-bottom: 40px;
+  background-color: $lighterblue;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    background: url('../img/clean_icon.png') no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    top: 10px;
+    right: -350px;
+    width: 60%;
+    height: 155%;
+    position: absolute;
+  }
 
   .inner-wrapper {
-    position: relative;
-
-    &::after {
-      content: '';
-      background: url('http://cdn.onlinewebfonts.com/svg/img_431572.png') no-repeat;
-      background-size: contain;
-      opacity: 0.5;
-      top: 20%;
-      right: -80px;
-      width: 30%;
-      height: 100%;;
-      position: absolute;
-    }
+    padding-bottom: 40px;
   }
 
   .section-title {
+    width: 76%;
     text-align: center;
     padding: 30px 0 20px;
     z-index: 1;
   }
 
   .members {
-    width: 70%;
+    width: 76%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -35,8 +37,8 @@
   }
 
   .member {
-    width: 25%;
-    margin: 16px 0;
+    width: 23%;
+    margin: 16px 5px;
     z-index: 1;
 
     &__img {
@@ -47,17 +49,20 @@
     }
 
     &__caption {
-      font-style: italic;
       margin-top: 10px;
       text-align: center;
 
       .name {
+        font-style: italic;
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 20px;
+        font-family: $sub-font;
       }
 
       .subtitle {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $main-font;
       }
     }
   }

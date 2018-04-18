@@ -1,9 +1,8 @@
 @import './globals';
 
 #bonus {
-  background-color: $lightgreen;
   min-height: 100px;
-  padding-bottom: 15px;
+  background-color: $lightgreen;
 
   .messages {
     position: relative;
@@ -14,23 +13,24 @@
     justify-items: center;
     align-items: center;
     z-index: 1;
+    overflow: hidden;
 
     &::after {
       position: absolute;
       content: '';
-      height: 80%;
+      height: 115%;
       width: 40%;
       opacity: 0.5;
-      top: 100px;
-      left: 50px;
+      top: 124px;
+      left: 0;
       z-index: -1;
-      background: url('http://cdn.onlinewebfonts.com/svg/img_431572.png') no-repeat;
+      background: url('../img/chef_icon.png') no-repeat;
       background-size: contain;
     }
 
     .section-title,
     .message {
-      width: 60%;
+      width: 75%;
       margin-left: auto;
       display: grid;
       grid-template-columns: 1fr;
@@ -46,10 +46,17 @@
       padding: 20px;
       grid-gap: 10px;
 
-      p {
-        width: 70%;
+      .bonus-text {
+        width: 65%;
+        color: $darkblue;
+        font-family: $sub-font;
+        font-size: 20px;
         font-weight: bold;
       }
+    }
+
+    .message:last-child {
+      margin-bottom: 30px;
     }
   }
 }

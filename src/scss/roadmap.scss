@@ -2,4 +2,80 @@
 
 #roadmap {
   display: grid;
+
+  .section-title,
+  .section-subtitle {
+    text-align: center;
+  }
+
+  .section-subtitle {
+    margin-top: 10px;
+  }
+
+  figure {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .figure-img {
+      height: 300px;
+      min-width: 70%;
+      background: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .legend {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+        font-family: $sub-font;
+        font-weight: bold;
+
+        display: grid;
+
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: flex-start;
+
+        &.left-dot {
+          text-align: left;
+          grid-template-columns: 35px 1fr;
+        }
+
+        &.right-dot {
+          text-align: right;
+          grid-template-columns: 1fr 35px;
+        }
+
+        .dot {
+          height: 30px;
+          display: block;
+          width: 30px;
+          border-radius: 50%;
+        }
+      }
+
+      .purple {
+        background-color: $purple;
+      }
+
+      .green {
+        background-color: $darkgreen;
+      }
+
+      .blue {
+        background-color: $lightblue;
+      }
+
+      .pink {
+        background-color: $pink;
+      }
+    }
+  }
 }

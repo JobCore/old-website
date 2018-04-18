@@ -1,15 +1,26 @@
 import React from 'react';
+import jsonData from '../content/contact.json';
+
+const language = 'en';
+
+const {
+  sectionTitle,
+  nameLabel,
+  emailLabel,
+  message,
+  observationsLabel,
+} = jsonData[language];
 
 const Contact = () => (
   <section id="contact">
     <div className="container">
-      <h2>Contact</h2>
+      <h2>{sectionTitle}</h2>
       <form>
         <div className="column column--left">
           <div className="inputs">
             <div className="input-group">
               <label htmlFor="name" className="form-check-label">
-                Full Name
+                {nameLabel}
                 <input
                   type="text"
                   name="name"
@@ -20,7 +31,7 @@ const Contact = () => (
             </div>
             <div className="input-group">
               <label htmlFor="email" className="form-check-label">
-                Email
+                {emailLabel}
                 <input
                   type="email"
                   name="email"
@@ -30,17 +41,12 @@ const Contact = () => (
               </label>
             </div>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-            molestias ratione, ipsum dolores vel quisquam ducimus! Culpa, totam
-            cumque illo repudiandae nobis quos, eum accusantium corporis
-            reprehenderit quae.
-          </p>
+          <p>{message}</p>
         </div>
         <div className="column column--right">
           <div className="input-group observation">
             <label htmlFor="observation" className="form-check-label">
-              Observation
+              {observationsLabel}
               <textarea
                 name="observation"
                 id="observation"

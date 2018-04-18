@@ -1,23 +1,9 @@
 import React from 'react';
 import uuid from 'uuid/v4';
+import jsonData from '../content/bonus-features.json';
 
-const featuresData = [
-  {
-    title: 'Companies can now fill their shifts in minutes',
-    message:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis ratione blanditiis error.',
-  },
-  {
-    title: 'The talent can now get jobs in minutes',
-    message:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis ratione blanditiis error.',
-  },
-  {
-    title: 'Companies can now Manage Users',
-    message:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis ratione blanditiis error.',
-  },
-];
+const language = 'en';
+const featuresData = jsonData[language].features;
 
 const convertDataToHtml = dataArr => {
   let html = [];

@@ -1,68 +1,8 @@
 import React from 'react';
 import uuid from 'uuid/v4';
+import jsonData from '../content/partners.json';
 
-// Top 5
-const mainBrandsData = [
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-];
-
-// 6 partners max for optimum visuals
-const otherBrandsData = [
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-  {
-    brandName: 'Company',
-    imageUrl:
-      'http://mericlereadytogo.com/Sunflower5-16/wp-content/uploads/2016/04/TailoredBrands.png',
-  },
-];
+const { mainPartners = [], others = [] } = jsonData;
 
 const convertDataToHtml = dataArr => {
   let html = [];
@@ -86,8 +26,8 @@ const Patners = () => (
     <div className="container">
       <h2 className="section-title">Partners</h2>
       <div className="showcase">
-        <div className="main-brands">{convertDataToHtml(mainBrandsData)}</div>
-        <div className="other-brands">{convertDataToHtml(otherBrandsData)}</div>
+        <div className="main-brands">{convertDataToHtml(mainPartners)}</div>
+        <div className="other-brands">{convertDataToHtml(others)}</div>
       </div>
     </div>
   </section>

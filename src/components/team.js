@@ -1,50 +1,10 @@
 import React from 'react';
 import uuid from 'uuid/v4';
+import jsonData from '../content/team.json';
 
-const membersData = [
-  {
-    imageUrl:
-      'http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png',
-    name: 'Kar Ball',
-    subtitle: 'Lorem ipsum dolor sit.',
-  },
-  {
-    imageUrl:
-      'http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png',
-    name: 'Kar Ball',
-    subtitle: 'Lorem ipsum dolor sit.',
-  },
-  {
-    imageUrl:
-      'http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png',
-    name: 'Kar Ball',
-    subtitle: 'Lorem ipsum dolor sit.',
-  },
-  {
-    imageUrl:
-      'http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png',
-    name: 'Kar Ball',
-    subtitle: 'Lorem ipsum dolor sit amet.',
-  },
-  {
-    imageUrl:
-      'http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png',
-    name: 'Kar Ball',
-    subtitle: 'Lorem ipsum dolor sit.',
-  },
-  {
-    imageUrl:
-      'http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png',
-    name: 'Kar Ball',
-    subtitle: 'Lorem ipsum dolor sit.',
-  },
-  {
-    imageUrl:
-      'http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png',
-    name: 'Kar Ball',
-    subtitle: 'Lorem ipsum dolor sit.',
-  },
-];
+const language = 'en';
+
+const { sectionTitle, members } = jsonData[language];
 
 const convertDataToHtml = dataArr => {
   let html = [];
@@ -72,8 +32,8 @@ const Team = () => (
   <section id="team">
     <div className="container">
       <div className="inner-wrapper">
-        <h2 className="section-title">Team</h2>
-        <div className="members">{convertDataToHtml(membersData)}</div>
+        <h2 className="section-title">{sectionTitle}</h2>
+        <div className="members">{convertDataToHtml(members)}</div>
       </div>
     </div>
   </section>

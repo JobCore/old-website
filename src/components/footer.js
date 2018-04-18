@@ -2,6 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Logo from '../img/logo.png';
+import jsonData from '../content/footer.json';
+import generalJsonData from '../content/general.json';
+import navJsonData from '../content/navigation.json';
+
+const language = 'en';
+
+const { instagramUrl, facebookUrl, linkedInUrl, twitterUrl } = generalJsonData;
+const { home, features, price, partners, company } = navJsonData[language];
 
 const Footer = ({ siteTitle }) => (
   <footer id="footer">
@@ -10,40 +18,37 @@ const Footer = ({ siteTitle }) => (
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{home}</Link>
             </li>
             <li>
-              <Link to="/#features">Features</Link>
+              <Link to="/#features">{features}</Link>
             </li>
             <li>
-              <Link to="/#price">Price</Link>
+              <Link to="/#price">{price}</Link>
             </li>
             <li>
-              <Link to="/#partners">Partners</Link>
+              <Link to="/#partners">{partners}</Link>
             </li>
             <li>
-              <Link to="/roadmap">The Company</Link>
+              <Link to="/roadmap">{company}</Link>
             </li>
           </ul>
         </nav>
         <div id="icons">
-          <a href="#instagram">
+          <a href={`/${instagramUrl}`}>
             <i className="fa fa-instagram fa-2x" />
           </a>
-          <a href="#facebook">
+          <a href={`/${facebookUrl}`}>
             <i className="fa fa-facebook fa-2x" />
           </a>
-          <a href="#linkedin">
+          <a href={`/${linkedInUrl}`}>
             <i className="fa fa-linkedin-square fa-2x" />
           </a>
-          <a href="#twitter">
+          <a href={`/${twitterUrl}`}>
             <i className="fa fa-twitter-square fa-2x" />
           </a>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-          voluptatum incidunt maxime dicta!
-        </p>
+        <p>{jsonData[language].message}</p>
       </div>
 
       <img id="logo" src={Logo} alt={`${siteTitle} logo`} />

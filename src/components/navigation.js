@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Logo from '../img/logo.png';
+import jsonData from '../content/navigation.json';
+
+const language = 'en';
 
 class Navigation extends Component {
   constructor(props) {
@@ -44,7 +47,7 @@ class Navigation extends Component {
                   location.hash === '' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="/" className="nav-link">
-                  Home
+                  {jsonData[language].home}
                 </Link>
               </li>
               <li
@@ -52,7 +55,7 @@ class Navigation extends Component {
                   location.hash === '#features' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="/#features" className="nav-link">
-                  Features
+                  {jsonData[language].features}
                 </Link>
               </li>
               <li
@@ -60,7 +63,7 @@ class Navigation extends Component {
                   location.hash === '#prices' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="/#prices" className="nav-link">
-                  Price
+                  {jsonData[language].price}
                 </Link>
               </li>
               <li
@@ -68,7 +71,7 @@ class Navigation extends Component {
                   location.hash === '#partners' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="/#partners" className="nav-link">
-                  Partners
+                  {jsonData[language].partners}
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -80,21 +83,21 @@ class Navigation extends Component {
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false">
-                  The Company
+                  {jsonData[language].company}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <Link to="/roadmap#roadmap" className="dropdown-item">
-                    Roadmap
+                    {jsonData[language].roadmap}
                   </Link>
                   <Link to="/roadmap#team" className="dropdown-item">
-                    Team
+                    {jsonData[language].team}
                   </Link>
                   <Link to="/roadmap#contact" className="dropdown-item">
-                    Contact
+                    {jsonData[language].contact}
                   </Link>
                   <div className="dropdown-divider" />
                   <Link to="/#" className="dropdown-item">
-                    White Paper
+                    {jsonData[language].whitePaper}
                     <i className="fa fa-download" />
                   </Link>
                 </div>
@@ -104,7 +107,7 @@ class Navigation extends Component {
                   location.hash === '#' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="#" className="btn nav-link">
-                  Login
+                  {jsonData[language].login}
                 </Link>
               </li>
             </ul>

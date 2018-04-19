@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 
+import roadmapImgUrl from '../img/roadmap.jpg';
+
 const Roadmap = ({ t }) => (
   <section id="roadmap">
     <div className="container">
@@ -9,7 +11,11 @@ const Roadmap = ({ t }) => (
       <h5 className="section-subtitle">{t('sectionSubtitle')}</h5>
 
       <figure>
-        <img className="figure-img" src="" alt={t('sectionTitle')} />
+        <img
+          className="figure-img"
+          src={roadmapImgUrl}
+          alt={t('sectionTitle')}
+        />
         <figcaption className="legend">
           <div className="legend-item right-dot">
             <p>{t('purpleDot')}.</p>

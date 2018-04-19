@@ -1,40 +1,31 @@
 import React from 'react';
-import jsonData from '../content/roadmap.json';
+import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 
-const language = 'en';
-const {
-  sectionTitle,
-  sectionSubtitle,
-  purpleDot,
-  greenDot,
-  blueDot,
-  pinkDot,
-} = jsonData[language];
-
-const Roadmap = () => (
+const Roadmap = ({ t }) => (
   <section id="roadmap">
     <div className="container">
-      <h2 className="section-title">{sectionTitle}</h2>
-      <h5 className="section-subtitle">{sectionSubtitle}</h5>
+      <h2 className="section-title">{t('sectionTitle')}</h2>
+      <h5 className="section-subtitle">{t('sectionSubtitle')}</h5>
 
       <figure>
-        <img className="figure-img" src="" alt={sectionTitle} />
+        <img className="figure-img" src="" alt={t('sectionTitle')} />
         <figcaption className="legend">
           <div className="legend-item right-dot">
-            <p>{purpleDot}.</p>
+            <p>{t('purpleDot')}.</p>
             <span className="dot purple" />
           </div>
           <div className="legend-item left-dot">
             <span className="dot blue" />
-            <p>{blueDot}</p>
+            <p>{t('blueDot')}</p>
           </div>
           <div className="legend-item right-dot">
-            <p>{greenDot}</p>
+            <p>{t('greenDot')}</p>
             <span className="dot green" />
           </div>
           <div className="legend-item left-dot">
             <span className="dot pink" />
-            <p>{pinkDot}</p>
+            <p>{t('pinkDot')}</p>
           </div>
         </figcaption>
       </figure>
@@ -42,4 +33,8 @@ const Roadmap = () => (
   </section>
 );
 
-export default Roadmap;
+Roadmap.propTypes = {
+  t: PropTypes.func,
+};
+
+export default translate('roadmap')(Roadmap);

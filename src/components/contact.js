@@ -1,26 +1,17 @@
 import React from 'react';
-import jsonData from '../content/contact.json';
+import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 
-const language = 'en';
-
-const {
-  sectionTitle,
-  nameLabel,
-  emailLabel,
-  message,
-  observationsLabel,
-} = jsonData[language];
-
-const Contact = () => (
+const Contact = ({ t }) => (
   <section id="contact">
     <div className="container">
-      <h2>{sectionTitle}</h2>
+      <h2>{t('sectionTitle')}</h2>
       <form>
         <div className="column column--left">
           <div className="inputs">
             <div className="input-group">
               <label htmlFor="name" className="form-check-label">
-                {nameLabel}
+                {t('nameLabel')}
                 <input
                   type="text"
                   name="name"
@@ -31,7 +22,7 @@ const Contact = () => (
             </div>
             <div className="input-group">
               <label htmlFor="email" className="form-check-label">
-                {emailLabel}
+                {t('emailLabel')}
                 <input
                   type="email"
                   name="email"
@@ -41,12 +32,12 @@ const Contact = () => (
               </label>
             </div>
           </div>
-          <p>{message}</p>
+          <p>{t('message')}</p>
         </div>
         <div className="column column--right">
           <div className="input-group observation">
             <label htmlFor="observation" className="form-check-label">
-              {observationsLabel}
+              {t('observationsLabel')}
               <textarea
                 name="observation"
                 id="observation"
@@ -60,4 +51,8 @@ const Contact = () => (
   </section>
 );
 
-export default Contact;
+Contact.propTypes = {
+  t: PropTypes.func,
+};
+
+export default translate('contact')(Contact);

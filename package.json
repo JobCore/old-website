@@ -21,17 +21,23 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
+    "fs-extra": "^5.0.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.25",
+    "i18next": "^11.2.2",
+    "i18next-browser-languagedetector": "^2.2.0",
+    "i18next-xhr-backend": "^1.5.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
     "prop-types": "^15.6.1",
     "react-bootstrap": "^0.32.1",
     "react-helmet": "^5.2.0",
+    "react-i18next": "^7.6.0",
     "uuid": "^3.2.1",
-    "video-react": "^0.10.4"
+    "video-react": "^0.10.4",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",

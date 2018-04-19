@@ -1,10 +1,7 @@
 import React from 'react';
 import uuid from 'uuid/v4';
-import jsonData from '../content/team.json';
-
-const language = 'en';
-
-const { sectionTitle, members } = jsonData[language];
+import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 
 const convertDataToHtml = dataArr => {
   let html = [];
@@ -28,15 +25,21 @@ const convertDataToHtml = dataArr => {
   return html;
 };
 
-const Team = () => (
+const Team = ({ t }) => (
   <section id="team">
     <div className="container">
       <div className="inner-wrapper">
-        <h2 className="section-title">{sectionTitle}</h2>
-        <div className="members">{convertDataToHtml(members)}</div>
+        <h2 className="section-title">{t('sectionTitle')}</h2>
+        <div className="members">
+          {convertDataToHtml(t('members', { returnObjects: true }))}
+        </div>
       </div>
     </div>
   </section>
 );
 
-export default Team;
+Team.propTypes = {
+  t: PropTypes.func,
+};
+
+export default translate('team')(Team);

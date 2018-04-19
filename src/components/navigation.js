@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import { translate } from 'react-i18next';
 import Logo from '../img/logo.png';
-import jsonData from '../content/navigation.json';
-
-const language = 'en';
 
 class Navigation extends Component {
   constructor(props) {
@@ -22,7 +20,7 @@ class Navigation extends Component {
   };
 
   render() {
-    const { siteTitle, location } = this.props;
+    const { siteTitle, location, t } = this.props;
     return (
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
@@ -47,7 +45,7 @@ class Navigation extends Component {
                   location.hash === '' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="/" className="nav-link">
-                  {jsonData[language].home}
+                  {t('home')}
                 </Link>
               </li>
               <li
@@ -55,7 +53,7 @@ class Navigation extends Component {
                   location.hash === '#features' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="/#features" className="nav-link">
-                  {jsonData[language].features}
+                  {t('features')}
                 </Link>
               </li>
               <li
@@ -63,7 +61,7 @@ class Navigation extends Component {
                   location.hash === '#prices' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="/#prices" className="nav-link">
-                  {jsonData[language].price}
+                  {t('price')}
                 </Link>
               </li>
               <li
@@ -71,7 +69,7 @@ class Navigation extends Component {
                   location.hash === '#partners' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="/#partners" className="nav-link">
-                  {jsonData[language].partners}
+                  {t('partners')}
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -83,21 +81,21 @@ class Navigation extends Component {
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false">
-                  {jsonData[language].company}
+                  {t('company')}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <Link to="/roadmap#roadmap" className="dropdown-item">
-                    {jsonData[language].roadmap}
+                    {t('roadmap')}
                   </Link>
                   <Link to="/roadmap#team" className="dropdown-item">
-                    {jsonData[language].team}
+                    {t('team')}
                   </Link>
                   <Link to="/roadmap#contact" className="dropdown-item">
-                    {jsonData[language].contact}
+                    {t('contact')}
                   </Link>
                   <div className="dropdown-divider" />
                   <Link to="/#" className="dropdown-item">
-                    {jsonData[language].whitePaper}
+                    {t('whitePaper')}
                     <i className="fa fa-download" />
                   </Link>
                 </div>
@@ -107,7 +105,7 @@ class Navigation extends Component {
                   location.hash === '#' ? 'nav-item active' : 'nav-item'
                 }>
                 <Link to="#" className="btn nav-link">
-                  {jsonData[language].login}
+                  {t('login')}
                 </Link>
               </li>
             </ul>
@@ -119,6 +117,7 @@ class Navigation extends Component {
 }
 
 Navigation.propTypes = {
+  t: PropTypes.func,
   siteTitle: PropTypes.string,
   location: PropTypes.shape({
     hash: PropTypes.string,
@@ -128,4 +127,4 @@ Navigation.propTypes = {
   }),
 };
 
-export default Navigation;
+export default translate('navigation')(Navigation);

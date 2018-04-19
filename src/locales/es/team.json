@@ -1,0 +1,40 @@
+{
+  "sectionTitle": "El Equipo",
+  "members": [
+    {
+      "imageUrl": "http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png",
+      "name": "Kar Ball",
+      "subtitle": "Lorem ipsum dolor sit."
+    },
+    {
+      "imageUrl": "http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png",
+      "name": "Juan Carlos Miranda",
+      "subtitle": "Lorem ipsum dolor sit."
+    },
+    {
+      "imageUrl": "http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png",
+      "name": "Alex Perez",
+      "subtitle": "Lorem ipsum dolor sit."
+    },
+    {
+      "imageUrl": "http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png",
+      "name": "Juan Pardo",
+      "subtitle": "Lorem ipsum dolor sit amet."
+    },
+    {
+      "imageUrl": "http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png",
+      "name": "Carlos Díaz",
+      "subtitle": "Lorem ipsum dolor sit."
+    },
+    {
+      "imageUrl": "http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png",
+      "name": "Alex Perez",
+      "subtitle": "Lorem ipsum dolor sit."
+    },
+    {
+      "imageUrl": "http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png",
+      "name": "Kar Ball",
+      "subtitle": "Lorem ipsum dolor sit."
+    }
+  ]
+}

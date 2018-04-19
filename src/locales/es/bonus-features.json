@@ -1,0 +1,17 @@
+{
+  "sectionTitle": "Features Adicionales",
+  "features": [
+    {
+      "title": "Companies can now fill their shifts in minutes",
+      "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis ratione blanditiis error."
+    },
+    {
+      "title": "The talent can now get jobs in minutes",
+      "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis ratione blanditiis error."
+    },
+    {
+      "title": "Companies can now Manage Users",
+      "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis ratione blanditiis error."
+    }
+  ]
+}

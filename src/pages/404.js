@@ -1,10 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 
-const NotFoundPage = () => (
+const NotFoundPage = ({ t }) => (
   <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>{t('notFound')}</h1>
+    <p>{t('message')}</p>
   </div>
 );
 
-export default NotFoundPage;
+NotFoundPage.propTypes = {
+  t: PropTypes.func,
+};
+
+export default translate('not-found-page')(NotFoundPage);

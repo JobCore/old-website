@@ -1,31 +1,27 @@
 import React from 'react';
-import jsonData from '../content/prices.json';
+import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 
-const language = 'en';
-const {
-  sectionTitle,
-  sectionSubtitle,
-  subtitleSmallText,
-  buttonText,
-  buttonSmallText,
-} = jsonData[language];
-
-const Prices = () => (
+const Prices = ({ t }) => (
   <section id="prices">
     <div className="container">
       <div className="messages">
-        <h2 className="section-title">{sectionTitle}</h2>
+        <h2 className="section-title">{t('sectionTitle')}</h2>
         <div className="message">
-          <h6>{sectionSubtitle}</h6>
-          <p className="italized">{subtitleSmallText}</p>
+          <h6>{t('sectionSubtitle')}</h6>
+          <p className="italized">{t('subtitleSmallText')}</p>
         </div>
         <div className="cta">
-          <button className="btn">{buttonText}</button>
-          <p className="italized">{buttonSmallText}</p>
+          <button className="btn">{t('buttonText')}</button>
+          <p className="italized">{t('buttonSmallText')}</p>
         </div>
       </div>
     </div>
   </section>
 );
 
-export default Prices;
+Prices.propTypes = {
+  t: PropTypes.func,
+};
+
+export default translate('prices')(Prices);

@@ -1,9 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import uuid from 'uuid/v4';
-import jsonData from '../content/bonus-features.json';
-
-const language = 'en';
-const featuresData = jsonData[language].features;
+import { translate } from 'react-i18next';
 
 const convertDataToHtml = dataArr => {
   let html = [];
@@ -20,15 +18,19 @@ const convertDataToHtml = dataArr => {
   return html;
 };
 
-const BonusFeatures = () => (
+const BonusFeatures = ({ t }) => (
   <section id="bonus">
     <div className="container">
       <div className="messages">
-        <h2 className="section-title">Bonus Features</h2>
-        {convertDataToHtml(featuresData)}
+        <h2 className="section-title">{t('sectionTitle')}</h2>
+        {convertDataToHtml(t('features', { returnObjects: true }))}
       </div>
     </div>
   </section>
 );
 
-export default BonusFeatures;
+BonusFeatures.propTypes = {
+  t: PropTypes.func,
+};
+
+export default translate('bonus-features')(BonusFeatures);

@@ -1,0 +1,29 @@
+.post {
+  &__heading {
+    font-size: 1.6rem !important;
+    font-family: $sub-font !important;
+    margin-bottom: 20px;
+
+    .title {
+      color: $purple;
+      font-size: 40px !important;
+      font-family: $main-font;
+      margin-right: 10px;
+    }
+
+    .author {
+      font-size: 2rem;
+      font-style: italic;
+      font-family: $sub-font;
+    }
+
+    .date {
+      font-size: 1.4rem;
+      margin-left: 10px;
+    }
+  }
+
+  &__excerpt {
+    font-size: 1.3rem;
+  }
+}

@@ -84,6 +84,9 @@ class Navigation extends Component {
                   {t('company')}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <Link to="/blog" className="dropdown-item">
+                    {t('blog')}
+                  </Link>
                   <Link to="/roadmap#roadmap" className="dropdown-item">
                     {t('roadmap')}
                   </Link>

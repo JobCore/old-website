@@ -19,14 +19,18 @@
     "stylelint"
   ],
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.1.0",
     "font-awesome": "^4.7.0",
     "fs-extra": "^5.0.0",
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "gatsby-plugin-sass": "^1.0.25",
-    "i18next": "^11.2.2",
+    "gatsby": "^1.9.253",
+    "gatsby-link": "^1.6.41",
+    "gatsby-paginate": "^1.0.14",
+    "gatsby-plugin-catch-links": "^1.0.19",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-source-filesystem": "^1.5.33",
+    "gatsby-transformer-remark": "^1.7.40",
+    "i18next": "^11.2.3",
     "i18next-browser-languagedetector": "^2.2.0",
     "i18next-xhr-backend": "^1.5.1",
     "jquery": "^3.3.1",
@@ -40,20 +44,20 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-react": "^1.1.7",
-    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.11.1",
+    "prettier": "^1.12.1",
     "stylelint": "^9.2.0",
     "stylelint-config-sass-guidelines": "^5.0.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.0.0"
+    "stylelint-scss": "^3.0.1"
   }
 }

@@ -2,7 +2,7 @@
   .container {
     display: grid;
     min-height: 550px;
-    grid-template-rows: minmax(100px, max-content) 1fr;
+    grid-template-rows: minmax(100px, min-content) 1fr;
     height: 100%;
     margin: 0 auto;
     padding-bottom: 60px;
@@ -35,7 +35,7 @@
 
       &--left {
         display: grid;
-        grid-auto-rows: 1fr max-content;
+        grid-auto-rows: 1fr min-content;
       }
     }
 

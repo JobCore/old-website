@@ -40,6 +40,7 @@ const Blog = ({ t, pathContext }) => {
         <div className="posts">
           {group.map(({ node }) => (
             <PostPreview
+              key={uuid()}
               frontmatter={node.frontmatter}
               excerpt={node.excerpt}
             />

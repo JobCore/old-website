@@ -14,10 +14,10 @@ const Hero = ({ t }) => (
               <span key={uuid()}>{text}</span>
             ))}
           </h1>
-          <h5 className="subtitle">{t('headerSubtitle')}</h5>
         </div>
         <div className="cta--sign-up">
           <button className="sign-up-btn">{t('signUpText')}</button>
+          <h5 className="subtitle">{t('headerSubtitle')}</h5>
         </div>
       </div>
       <div className="explanation">

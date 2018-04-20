@@ -26,7 +26,7 @@ html,
 body,
 #layout {
   color: $black;
-  margin-top: 80px;
+  margin-top: 100px;
   box-sizing: border-box;
   font-size: 16px;
   min-width: 680px;
@@ -35,7 +35,7 @@ body,
 
 #layout {
   display: grid;
-  grid-template-rows: 1fr 300px;
+  grid-template-rows: 1fr min-content;
   align-items: center;
   max-width: 100vw;
   min-height: 100vh;

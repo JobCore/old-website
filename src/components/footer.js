@@ -8,6 +8,7 @@ import LanguageSwitcher from './languageSwitcher';
 const Footer = ({ siteTitle, t }) => (
   <footer id="footer">
     <div className="container">
+      <img id="logo" src={Logo} alt={`${siteTitle} logo`} />
       <div id="message">
         <nav>
           <ul>
@@ -44,8 +45,6 @@ const Footer = ({ siteTitle, t }) => (
         </div>
         <p>{t('message')}</p>
       </div>
-
-      <img id="logo" src={Logo} alt={`${siteTitle} logo`} />
     </div>
     <LanguageSwitcher />
   </footer>

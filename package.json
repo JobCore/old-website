@@ -11,6 +11,7 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
+    "c9": "gatsby develop -p $PORT -H $IP",
     "eslint": "eslint . --ext .js,.jsx --quiet",
     "stylelint": "stylelint 'src/scss/*.scss'"
   },

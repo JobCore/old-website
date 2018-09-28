@@ -5,10 +5,6 @@ import { I18nextProvider } from 'react-i18next';
 
 // TODO: USE THIS FOR OFFLINE DEVELOPMENT
 // eslint-disable-next-line no-unused-vars
-import $ from 'jquery';
-import 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-
 import 'bootstrap/scss/bootstrap.scss';
 import i18n from '../components/i18n';
 import Navigation from '../components/navigation';

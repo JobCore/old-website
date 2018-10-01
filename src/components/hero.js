@@ -28,12 +28,12 @@ const Hero = ({ t }) => (
         {/*
         Component source:
         https://video-react.js.org/components/player/
-        */}
         <Player
           playsInline
           poster="https://i.redditmedia.com/kXhbzIEZIfa6cFVFMLeJYEbr2pdDR13Zx9MOb2f9Bhc.jpg?w=320&s=a2bb79971aa62d5f876d8e6b4746f24f"
           src="https://i.redditmedia.com/kXhbzIEZIfa6cFVFMLeJYEbr2pdDR13Zx9MOb2f9Bhc.jpg?w=320&s=a2bb79971aa62d5f876d8e6b4746f24f"
         />
+        */}
       </div>
     </div>
   </header>

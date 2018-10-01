@@ -107,9 +107,9 @@ class Navigation extends Component {
                 className={
                   location.hash === '#' ? 'nav-item active' : 'nav-item'
                 }>
-                <Link to="#" className="btn nav-link">
+                <a href="http://talent.jobcore.co" className="btn nav-link">
                   {t('login')}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

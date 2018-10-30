@@ -1,6 +1,5 @@
 import React from 'react';
 import uuid from 'uuid/v4';
-import { Player } from 'video-react';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 
